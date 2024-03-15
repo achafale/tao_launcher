@@ -32,10 +32,11 @@
                             "yolo_v4_tiny"
                         ]
                     },
-                    "5.0.0-pyt": {
+                    "5.3.0-pyt": {
                         "docker_registry": "nvcr.io",
                         "tasks": [
                             "action_recognition",
+                            "centerpose",
                             "deformable_detr",
                             "dino",
                             "mal",
@@ -46,14 +47,9 @@
                             "pointpillars",
                             "pose_classification",
                             "re_identification",
-                            "segformer"
-                        ]
-                    },
-                    "5.1.0-pyt": {
-                        "docker_registry": "nvcr.io",
-                        "tasks": [
+                            "visual_changenet",
                             "classification_pyt",
-                            "visual_changenet"
+                            "segformer"
                         ]
                     }
                 }
@@ -62,7 +58,7 @@
         "dataset": {
             "dockers": {
                 "nvidia/tao/tao-toolkit": {
-                    "5.0.0-data-services": {
+                    "5.3.0-data-services": {
                         "docker_registry": "nvcr.io",
                         "tasks": [
                             "augmentation",
@@ -77,9 +73,12 @@
         "deploy": {
             "dockers": {
                 "nvidia/tao/tao-toolkit": {
-                    "5.0.0-deploy": {
+                    "5.3.0-deploy": {
                         "docker_registry": "nvcr.io",
                         "tasks": [
+                            "visual_changenet",
+                            "centerpose",
+                            "classification_pyt",
                             "classification_tf1",
                             "classification_tf2",
                             "deformable_detr",
@@ -105,20 +104,13 @@
                             "yolo_v4",
                             "yolo_v4_tiny"
                         ]
-                    },
-                    "5.1.0-deploy": {
-                        "docker_registry": "nvcr.io",
-                        "tasks": [
-                            "classification_pyt",
-                            "visual_changenet"
-                        ]
                     }
                 }
             }
         }
     },
     "format_version": 3.0,
-    "toolkit_version": "5.1.0",
-    "published_date": "10/10/2023"
+    "toolkit_version": "5.3.0",
+    "published_date": "03/14/2024"
 }
 

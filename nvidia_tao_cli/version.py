@@ -15,7 +15,7 @@
 """Launcher SDK version."""
 
 MAJOR = "5"
-MINOR = "1"
+MINOR = "3"
 PATCH = "0"
 PRE_RELEASE = ''
 
@@ -54,7 +54,7 @@ __package_name__ = "nvidia-tao"
 __description__ = "NVIDIA's Launcher for TAO Toolkit."
 __keywords__ = "nvidia, tao, launcher"
 
-__contact_names__ = "Varun Praveen"
-__contact_emails__ = "vpraveen@nvidia.com"
+__contact_names__ = "Varun Praveeni, Arun George Zachariah"
+__contact_emails__ = "vpraveen@nvidia.com, azachariah@nvidia.com"
 
 __license__ = "Apache 2.0"
