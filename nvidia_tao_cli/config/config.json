@@ -2,17 +2,15 @@
     "task_group": {
         "model": {
             "dockers": {
-                "nvstaging/tao/tao-toolkit-tf2": {
-                    "v5.0.0-tf2.9.1-458-dev-cuda11.8": {
+                "nvidia/tao/tao-toolkit": {
+                    "5.5.0-tf2": {
                         "docker_registry": "nvcr.io",
                         "tasks": [
                             "classification_tf2",
                             "efficientdet_tf2"
                         ]
-                    }
-                },
-                "nvstaging/tao/tao-toolkit-tf": {
-                    "v5.0.0-oss-tf1.15.5-299-dev-cuda12.0": {
+                    },
+                    "5.0.0-tf1.15.5": {
                         "docker_registry": "nvcr.io",
                         "tasks": [
                             "bpnet",
@@ -33,10 +31,8 @@
                             "yolo_v4",
                             "yolo_v4_tiny"
                         ]
-                    }
-                },
-                "nvstaging/tao/tao-toolkit-pyt": {
-                    "v3.22.11-1671-dev-cuda11.6": {
+                    },
+                    "5.5.0-pyt": {
                         "docker_registry": "nvcr.io",
                         "tasks": [
                             "action_recognition",
@@ -65,8 +61,8 @@
         },
         "dataset": {
             "dockers": {
-                "nvstaging/tao/tao-toolkit-ds": {
-                    "v5.0.0-167-dev-cuda12.0": {
+                "nvidia/tao/tao-toolkit": {
+                    "5.5.0-data-services": {
                         "docker_registry": "nvcr.io",
                         "tasks": [
                             "augmentation",
@@ -80,8 +76,8 @@
         },
         "deploy": {
             "dockers": {
-                "nvstaging/tao/tao-toolkit-deploy": {
-                    "v5.0.0-trt8.5.3.1-340-dev-cuda12.0": {
+                "nvidia/tao/tao-toolkit": {
+                    "5.5.0-deploy": {
                         "docker_registry": "nvcr.io",
                         "tasks": [
                             "visual_changenet",
@@ -114,6 +110,7 @@
                             "yolo_v3",
                             "yolo_v4",
                             "yolo_v4_tiny"
+
                         ]
                     }
                 }
@@ -121,6 +118,6 @@
         }
     },
     "format_version": 3.0,
-    "toolkit_version": "5.0.0",
-    "published_date": "04/18/2023"
+    "toolkit_version": "5.3.0",
+    "published_date": "03/14/2024"
 }
