@@ -15,8 +15,8 @@
 """Launcher SDK version."""
 
 MAJOR = "5"
-MINOR = "0.0"
-PATCH = "01"
+MINOR = "5"
+PATCH = "1"
 PRE_RELEASE = ''
 
 
