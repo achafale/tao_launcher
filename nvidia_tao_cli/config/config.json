@@ -2,15 +2,17 @@
     "task_group": {
         "model": {
             "dockers": {
-                "nvidia/tao/tao-toolkit": {
-                    "5.0.0-tf2.11.0": {
+                "nvstaging/tao/tao-toolkit-tf2": {
+                    "v5.0.0-tf2.9.1-458-dev-cuda11.8": {
                         "docker_registry": "nvcr.io",
                         "tasks": [
                             "classification_tf2",
                             "efficientdet_tf2"
                         ]
-                    },
-                    "5.0.0-tf1.15.5": {
+                    }
+                },
+                "nvstaging/tao/tao-toolkit-tf": {
+                    "v5.0.0-oss-tf1.15.5-299-dev-cuda12.0": {
                         "docker_registry": "nvcr.io",
                         "tasks": [
                             "bpnet",
@@ -31,14 +33,20 @@
                             "yolo_v4",
                             "yolo_v4_tiny"
                         ]
-                    },
-                    "5.3.0-pyt": {
+                    }
+                },
+                "nvstaging/tao/tao-toolkit-pyt": {
+                    "v3.22.11-1671-dev-cuda11.6": {
                         "docker_registry": "nvcr.io",
                         "tasks": [
                             "action_recognition",
                             "centerpose",
+                            "visual_changenet",
                             "deformable_detr",
                             "dino",
+                            "grounding_dino",
+                            "mask_grounding_dino",
+                            "mask2former",
                             "mal",
                             "ml_recog",
                             "ocdnet",
@@ -47,9 +55,9 @@
                             "pointpillars",
                             "pose_classification",
                             "re_identification",
-                            "visual_changenet",
                             "classification_pyt",
-                            "segformer"
+                            "segformer",
+                            "bevfusion"
                         ]
                     }
                 }
@@ -57,8 +65,8 @@
         },
         "dataset": {
             "dockers": {
-                "nvidia/tao/tao-toolkit": {
-                    "5.3.0-data-services": {
+                "nvstaging/tao/tao-toolkit-ds": {
+                    "v5.0.0-167-dev-cuda12.0": {
                         "docker_registry": "nvcr.io",
                         "tasks": [
                             "augmentation",
@@ -72,8 +80,8 @@
         },
         "deploy": {
             "dockers": {
-                "nvidia/tao/tao-toolkit": {
-                    "5.3.0-deploy": {
+                "nvstaging/tao/tao-toolkit-deploy": {
+                    "v5.0.0-trt8.5.3.1-340-dev-cuda12.0": {
                         "docker_registry": "nvcr.io",
                         "tasks": [
                             "visual_changenet",
@@ -88,6 +96,9 @@
                             "efficientdet_tf1",
                             "efficientdet_tf2",
                             "faster_rcnn",
+                            "grounding_dino",
+                            "mask_grounding_dino",
+                            "mask2former",
                             "lprnet",
                             "mask_rcnn",
                             "ml_recog",
@@ -110,7 +121,6 @@
         }
     },
     "format_version": 3.0,
-    "toolkit_version": "5.3.0",
-    "published_date": "03/14/2024"
+    "toolkit_version": "5.0.0",
+    "published_date": "04/18/2023"
 }
-
