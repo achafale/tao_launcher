@@ -34,10 +34,10 @@ This section covers a quick guide to start working with the launcher.
 
 2. Install nvidia-container-toolkit by following these [installation instructions](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html).
 
-3. Login to the NGC staging area docker registry using the api key generated from `stg.ngc.nvidia.com`
+3. Login to the NGC staging area docker registry using the api key generated from `ngc.nvidia.com`
 
 ```sh
-docker login stg.nvcr.io
+docker login nvcr.io
 ```
 
 4. The TAO Launcher can be installed using the wheel from the [google drive](https://drive.google.com/drive/u/1/folders/1-r-Tq6vgyVnb1YsZppteCu9M-zss0Xcs) 
